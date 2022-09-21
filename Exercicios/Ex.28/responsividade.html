@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        body{
+            background-color: rgba(255, 228, 196, 0.548);
+            font-size: 1.1em;
+        }
+        h1{
+            background-color: rgba(70, 47, 3, 0.726);
+            color: white;
+        }
+        article{
+
+            background-color: rgb(45, 87, 88);
+            color: white;
+            padding: 1px 10px 5px 10px;
+            border-radius: 7px;
+            text-align: justify;
+            box-shadow: -1px 1px 10px 0px rgba(0, 0, 0, 0.801);
+
+            min-width: 300px;
+            max-width: 850px;
+            margin: auto;
+            
+        }
+        article > h3 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        article > img {
+            width: 70%;
+            display: block;
+            margin: auto;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo Responsividade</h1>
+    
+        <p>Assunto muito importante para os tamanhos de tela que seu site vai se adequar</p>
+        <p>Os <mark>blocos</mark> já são responsivos porquem sempre ocupam 100% da tela, ex: div, h1, p</p>
+        
+        <p>Existem algumas formas, inicialmente vamos utilizar uma forma tradicional, que é <mark>max-width e min-width</mark>, como no exemplo abaixo:</p>
+
+        <img src="Responsividade.png" alt="Responsividade">
+
+        <p>Com as configurações acima, o usúario conseguiu deixar o &lt;main&gt; responsivo, colocou um padding de 20px, arredondou as bordas e coloriu para facilitar a visualização, pôs o min-width em 320px, por ser um tamanho comum em aparelhos telefonicos, e o max-width em 800px, e isso também faz com que criasse <mark>margem nas laterais</mark>, e continue responsivo</p>
+
+        <h2>Mas como isso funciona?</h2>
+
+        <p>O main será responsivo quando reduzido até 320px, e terá um tamanho máximo de 800px, o usuário também colocou <mark>'margin: auto;'</mark>, que irá manter o main no centro da tela</p>
+
+        <p>Detalhe também pro img, que foi alterado para   'width:100%;' para que ocupe sempre 100% da tela, porém, não é o recomendado, o <mark>ideal é utilizar mais de uma imagem, que se adaptem de acordo com o tamanho da tela</mark>, pois se utilizarmos uma imagem de tamanho médio e colocar em width:100%, ao aumentarmos a tela ela ficará muito grande, alterando totalmente o design do site</p>
+
+        <h2>Exemplos</h2>
+
+        <p>Irei criar exemplos de responsividade</p>
+
+        <article>
+            <h3>Teste de responsividade</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae aperiam, alias voluptate dolor nesciunt voluptates. Excepturi cum odit labore atque, incidunt sequi harum odio fuga necessitatibus porro libero qui nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, omnis? Praesentium nostrum facilis modi ab. Nemo atque quibusdam necessitatibus fuga, quo velit, dicta, tenetur fugit rem quisquam odio neque Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus iure possimus laudantium odio animi amet esse sunt sit aperiam iusto cupiditate, cum consectetur a voluptates fugit voluptatibus repudiandae officiis perferendis!</p> 
+                 <img src="audi.jpg" alt="audi"> 
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae culpa vitae consequuntur totam expedita id unde corporis! Non nostrum doloribus, magni quis fugiat repellat magnam est, dicta, debitis aspernatur exercitationem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, esse facere! Est a blanditiis delectus non repudiandae nostrum magni ullam animi! Laudantium provident itaque iusto quibusdam harum qui. Adipisci, animi.</p>
+        </article>
+            <section>
+            <p>Podemos ver que o proprio article já é responsivo naturalmente por ser <mark>block</mark>, mas para centralizar/fixar devemos fazer algumas alterações</p>
+            <p>Com a imagem, diminuimos no width, para não ficar uma imagem muito grande quando aumentamos a tela, transformamos em block e utilizamos margin: auto para manter centralizada, detalhe que ela só <mark>cresce até quanto botamos no max-width, 800px, ou utilizamos apenas 'max-width'</mark> </p>
+        </section>
+</body>
+</html>

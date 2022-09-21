@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo root</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos aprender a colocar uma raiz/root no CSS</h1>
+        <p>Que representa uma configuração global, ou, uma variavel que guarda uma informação para que eu possa utilizar com facilidade</p>
+    </header>
+    <main>
+        <img src="Sem Título.png" alt="Exemplo de root">
+        <h2>Vamos ver o exemplo acima</h2>
+
+        <article>
+            <p>O primeiro fato que temos que observar, essa é uma página exclusiva de CSS, por isso na <strong>1º linha devemos colocar o tradicional <mark>'@charset "UTF-8";'</mark></strong></p>
+            <p>O segundo fato a observar é o <strong><mark>@import url</mark> na linha 3, que é uma fonte importada/embed do googlefonts</strong></p>
+            <p>E então observamos o <strong><mark>@font-face</mark> que é utilizado para colocarmos fontes baixadas</strong>, que no exemplo foi a fonte idroid. Detalhe pro <strong>"url(../fontes/idroid.otf')""</strong>, que os (..) utilizados antes de '/fonte' é muito importante nesse caso, pois os conteúdos desse site estavam em diferentes pastas, dessa forma os pontos servem para ele ir buscar o conteúdo em outra pasta</p>
+            <p style="font-weight: bold;">E então chegamos ao root, que é uma pseudo-classe, podemos ver pelo ":" antes do nome, para funcionar devemos colocar dois tracinhos <mark>"--"</mark> antes da função, como <mark>"--cor0: #ebe5c5;"</mark>. Foram utilizados exemplos de cores e fontes, e para serem utilizados, devemos usar a funçao var, por exemplo: "color: var(--cor1);" ou <mark>"font-family: var(--fonte-padrao);"</mark></p>
+            <p>É uma forma muito útil de economizar tempo pois se utilizado em várias tags, devemos apenas alterar no root, e não em todas tags que foi colocado</p>
+        </article>
+        <!-- Vamos finalizar isso a tarde, Pegarei algumas cores para utilizarmos como exemplo, provavelmente uma variação de azul, pegarei também 2 fontes, 1 baixada e 1 importada, tudo isso no root para vermos na prática as variáveis funcionando, faremos algum degrade com as cores, vamos dar destaque a algumas informações mais importantes que foram colocadas e no final irei por o vídeo completo -->
+    </main>
+</body>
+</html>

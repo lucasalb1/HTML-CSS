@@ -1,0 +1,131 @@
+@charset "UTF-8";
+ 
+@font-face {
+    font-family:'android';
+    src: url('IDroid.otf') format('truetype');
+}
+body{
+    background-color: rgba(0, 204, 17, 0.432);
+}
+header{
+    background-image:linear-gradient(to top, rgba(0, 95, 13, 0.986), rgba(0, 129, 0, 0.432));
+    margin-top: -21px;
+    margin-right: -7.5px;
+    margin-bottom: -20px;
+    margin-left: -8.5px;
+    padding: 13px;
+    box-shadow: 1px 1px 12px rgb(0, 0, 0);
+}
+header > h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:normal;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+header > p {
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+header > nav > a {
+    padding-left: 5px;
+    padding-bottom: 7px;
+    text-decoration: none;
+    margin: -5px;
+    height: 6px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+header > nav > a:hover {
+    background-color: rgba(134, 158, 134, 0.39);
+    padding: 9px;
+    border-radius: 5px;
+    transition-duration: .4s;
+}
+main {
+    background-color:white;
+    box-shadow: 0px 3px 10px 0px black;
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+}
+
+main > h1 {
+    font-family: 'android';
+    padding-left: 15px;
+    padding-top: 5px;
+    color: rgb(0, 100, 0);
+}
+main > h2 {
+    font-family: 'android';
+    padding-left: 15px;
+    color: rgb(0, 99, 0);
+    background-image: linear-gradient(to right, rgba(176, 228, 176, 0.671), rgb(202, 243, 202), rgb(255, 255, 255))
+}
+main > picture > source{
+    max-width: 100%;
+}
+picture > img{
+    width: 100%;
+}
+
+p > img{
+    max-width: 320px;
+    display: block;
+    margin: auto;
+}
+
+article {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.1em;
+    text-indent: 25px;
+    line-height: 1.5em;
+}
+#extra{
+    background-color: rgba(0, 128, 0, 0.658);
+    color: white;
+    margin: 10px;
+    padding: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+section {
+    font-size: 1.1em;
+    background-color: rgba(0, 128, 0, 0.226);
+    margin: -9.5px 10px 40px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1px 9px 0px 9px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+section > ul{
+    list-style-type: '\2714\00A0\00A0';
+    columns: 2;
+}
+section > p{
+    text-align: justify;
+    padding: 1px 5px 20px 5px;
+    text-indent: 25px;
+    line-height: 1.5em;
+}
+footer{
+    background-color: rgb(0, 87, 0);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: -22px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+footer > p {
+    margin: 0px;
+}

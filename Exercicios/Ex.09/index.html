@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links externos e internos</title>
+</head>
+<body>
+        <h1>Página inicial</h1>
+    <h2>Exemplos de links</h2>
+    <h3>Links externo para a mesma página</h3>
+    <p>Você pode acessar aqui, a página do maior <a href="https://www.tnh1.com.br/">portal de nóticias de alagoas - TNH1</a></p>
+    
+    <!--Link normal, pego de uma página de notícias, porém que abre na mesma aba, não recomendado para links externos-->
+    
+    <h3>Link externo para uma nova página</h3>
+    <p>Você pode acessar aqui, a página do maior <a href="https://www.tnh1.com.br/" target="_blank" rel="external">portal de nóticias de alagoas - TNH1</a></p>
+    
+    <!-- Link normal e também pego de uma página de notícias, 
+    que abre em uma nova aba -->
+    <hr>
+    
+    <h3>Links internos</h3>
+    <p>Você pode acessar nossa página de exemplos 1, <a href="exemplo01.html" rel="next" target="_self">clicando aqui</a></p>
+    
+    <!-- Para acessar um link interno, deve existir um arquivo criado na mesma pasta, como acima -->
+    
+    <h3>Links internos para sub-pastas</h3>
+    <p>Para acessar nossa página de exemplos 2, <a href="exemplo02/exemplo002.html" rel="next" target="_self">clique aqui</a></p> 
+    
+    <!-- Para acessar um link interno que está dentro de uma pasta deve se colocar o nome do arquivo e o nome do 
+    sub-arquivo, como acima, ou apenas CTRL + Space -->
+
+    <h3>Links para download</h3>
+        <p><a href="receita/DANFE Nº 4.pdf" download="DANFE Nº 4.pdf" type="application/pdf" target="_blank" rel="external">Baixe a nota fiscal</a></p>
+        <!-- Para colocar um link de download em um site devemos colocar o arquivo na mesma pasta em que estamos utilizando, e por no local de link com a tag 'dowlonad' repetindo o nome do arquivo, mais a tag 'type', onde colocaremos um termo de reconhecimento de arquivo, ex application/zip, application/jpg, e utilizei as tags target e rel para o arquivo baixar e abrir em uma nova página -->
+</body>
+</html>

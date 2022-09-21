@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras</title>
+    <style>
+        h1{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(150, 139, 122);
+            font-weight:bold;
+            font-size: 50px;
+            padding-left: 15px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+
+        header{
+            background-color: rgba(103, 139, 139, 0.301);
+            border-radius: 3px;
+            /* Border-radius pode ser representado apenas com um número que indicaria a mesma 'forma' para todos os lados ou pode ser representado como uma shorthand, ex: 1px 2px 3px 4px, que dessa forma ele indicaria a seguinte sequencia, superior esquerdo, superior direito, inferior direito e inferior esquerdo. Uma forma legal de visualizar isso é utilizando o Dev tools. */
+            /* 
+            Utilizando 2 números ele vai dar forma aos lados inversos, por exemplo: 2px 3px, ele utilizará 2px nos lados superior esquerdo e inferior direito, e 3px nos lados inferior esquerdo e superior direito */
+            
+            /* O design prima pela descrição */
+
+            /* Podemos criar uma bola com border-radius, utilizando uma div com height=width, e o border-radius em 50%, sim podemos utilizar porcentagem. */
+            padding-top: 0px;
+            padding-right: 4px;
+            padding-bottom: 4px;
+            padding-left: 3px;
+
+            margin-top: 15px;
+            margin-right: 5px;
+            margin-bottom: 0px;
+            margin-left: 5px;
+
+            border-style: solid;
+            border-width: 2px;
+            border-color: rgba(50, 201, 201, 0.788);
+        }
+        nav{
+            background-color: cadetblue;
+            height: 25px;
+            width: 160px;
+            padding: 4px;
+            box-shadow: 1px 1px 3px black;
+            /*  O primeiro px é deslocamento horizontal, o segundo vertical e o terceiro é o espalhamento, o box-shadow já é representado como shorthand
+             */
+             /* Podemos utilizar a ferramenta do Dev Tools para criar o box-shadow, e lá ele lhe dá mais utilidades, pois voce escolhe o local certo para a sombra, altura, tamanho e embaçamento */
+        }
+        nav > a{
+            color: rgb(219, 226, 226);
+            text-decoration: none;
+            font-size: 18px;
+            padding-left: 12px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2{
+            background-color: rgba(169, 169, 169, 0.705);
+            padding-left: 15px;
+            color: rgba(62, 80, 32, 0.788);
+            border-radius: 5px;
+            height: 30px;
+            margin:10px;
+        }
+        section{
+            background-color: rgba(172, 163, 150, 0.219);
+            color: rgba(0, 0, 0, 0.801);
+            font-weight:550;
+            padding-top: 1px;
+            padding-left: 7px;
+            padding-bottom: 1px;
+        }
+        article > p{
+            padding: 2px;
+            text-align: justify;
+        }
+        article > aside{
+            background-color: rgba(73, 150, 123, 0.473);   
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Testando Sites</h1>
+        <nav>
+            <a href="https://www.youtube.com/watch?v=JACiDRNWjjQ&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=27" target="_blank">Link</a>
+            <a href="https://alunodigitalead.faculdadepitagoras.com.br/ead_pitagoras" target="_blank">Link</a>
+            <a href="https://www.youtube.com/watch?v=3_g2un5M350" target="_blank">Link</a>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <h2>Assuntos aleatórios</h2>
+        <br>
+        <section>
+            <article>
+                <p>Vamos falar sobre esportes, educação, saúde e tecnologia, pois o site é meu e são assuntos que me interessam e de interesse geral</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus dolorum voluptates quibusdam aut ullam repellat nulla deleniti officia perspiciatis laboriosam, cupiditate quasi minima. Optio qui praesentium magnam et explicabo a.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, temporibus dicta soluta explicabo mollitia odit tenetur inventore maiores molestias corrupti, commodi quaerat, recusandae animi veniam nisi ex ipsa dolore ad.</p>
+                <aside>
+                    <p>Escrito por Lucas Albuquerque</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <br>
+    <footer>
+        <p>Desenvolvido por Lucas Albuquerque</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: fabella;
+    src: url('fabella-flower.ttf');
+}
+
+body{
+    font-size: 1.1em;
+}
+:root{ 
+    --cor0: #005878c2;
+    --cor1: #08BDFF;
+    --cor2: #4BCAF9;
+
+    --fonte-padrão: 'Source Sans Pro',sans-serif;
+    --fonte-familia: fabella, cursive;
+    --fonte-ok: cursive;
+}
+header{
+    background-image: linear-gradient(to right, var(--cor2), var(--cor1), var(--cor0));
+    font-family: var(--fonte-padrão);
+}
+header > h1{
+    font-family: var(--fonte-ok);
+    text-align: center;
+}
+header > p{
+    text-align: justify;
+    padding: 7px;
+}
+main{
+    background-color: var(--cor2);
+    font-family: var(--fonte-padrão);
+}
+main > h2{
+    padding-left: 15px;
+    background-color: var(--cor0);
+    color: rgb(245, 188, 188);
+}
+main > article{
+    padding: 5px;
+    text-align: justify;
+}
+ 
