@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colunas</title>
+</head>
+<style>
+    table{
+        font-family: Arial, Helvetica, sans-serif;
+        width: 500px;
+        height: 300px;
+        border-collapse: collapse;
+    }
+    th, td{
+        border: 1px solid black;
+        padding: 5px;
+    }
+    .vermelho{
+        background-color: red;
+    }
+    .amarelo{
+        background-color: yellow;
+    }
+</style>
+<body>
+    <!-- Devemos abrir a tag colgroup e colocar em tags 'col', a quantidade de colunas que temos em nossa tabela, nessa por exemplo temos 4, e colocando a class apenas nas últimas 2 ele ja reconheceu -->
+    <h1>Selecionando as colunas das tabelas</h1>
+    <table>
+        <colgroup>
+        <col>
+        <col>
+        <col class="vermelho">
+        <col class="amarelo">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>José</td>
+                <td>Masculino</td>
+                <td>25</td>
+                <td>Policial</td>
+            </tr>
+            <tr>
+                <td>Mário</td>
+                <td>Masculino</td>
+                <td>23</td>
+                <td>Juíz</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>Masculino</td>
+                <td>22</td>
+                <td>Cirurgião</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>Masculino</td>
+                <td>21</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>Feminino</td>
+                <td>23</td>
+                <td>Médica</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
