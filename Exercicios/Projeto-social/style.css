@@ -4,12 +4,35 @@
     padding: 0px;
     margin: 0px;
 }
-.back{
-    background-image: url(imagens/fundo-madeira.jpg);
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+body{
+    background: url(imagens/fundo-madeira.jpg) no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
+}
+main{
+    position: relative;
+    height: 100vh;
+}
+#telefone{
+    background: url(imagens/frame-iphone.png) no-repeat;
+    height: 627px;
+    width: 311px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
+#tela{
+    position: relative;
+    top: 80px;
+    left: 22px;
+    height: 471px;
+    width: 269px;
+}
 
