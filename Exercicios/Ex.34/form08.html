@@ -26,6 +26,33 @@
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
     </form>
-    <form action="" method="get"></form>
+    <form action="cadastro.js" method="get" autocomplete="on">
+        <p>
+            <label for="irang">Escolha</label>
+            <input type="range" name="rang" id="irang" min="0" max="10" oninput="urang.innerHTML = Number(irang.value)">
+            <output name="urang" id="uirang">5</output>
+        </p>
+        <p><input type="submit" value="Enviar">
+        </p>
+    </form>
+    <form action="cadastro.js" method="post" autocomplete="on">
+        <p>
+            <label for="iano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" required min="1900" max="2022" placeholder="Digite seu ano de nascimento" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="idade">Sua idade é:</label>
+            <output id="idade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+        <script>
+            function calcIdade(){
+                let atual = new Date().getFullYear()
+                idade.innerHTML= Number(atual) - Number(iano.value)
+            }
+        </script>
+    </form>
 </body>
 </html>
