@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetinho</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <i id="burg" class="material-icons" onclick="clickMenu()">menu</i>
+        <Menu id="itens">
+            <ul>
+                <li><a href="">Opção 1</a></li>
+                <li><a href="">Opção 2</a></li>
+                <li><a href="">Opção 3</a></li>
+                <li><a href="">Opção 4</a></li>
+                <li><a href="">Opção 5</a></li>
+            </ul>
+        </Menu>
+    </header>
+    <main>
+        <article>
+        <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat atque, excepturi aperiam nostrum consequatur perspiciatis eveniet explicabo, ea ipsa nemo veritatis illum cumque adipisci doloribus voluptate inventore perferendis repellendus magnam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam eveniet, maxime placeat ratione accusantium labore totam eaque repellat, vel qui dolores temporibus quod unde nulla, a quasi tempore ipsa fugit?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam distinctio, animi ullam quos expedita fugiat soluta fuga. Repudiandae, laudantium explicabo. Voluptatibus impedit autem cumque excepturi odit sapiente, vitae tenetur consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ipsum delectus excepturi voluptas dolor, esse dicta? Consequatur minus, delectus reiciendis suscipit illo possimus minima? Ipsam, cupiditate? Debitis error aperiam omnis.</p> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit laborum odit id provident facere officiis eveniet dicta amet, atque voluptas qui? Reiciendis dolor eum molestias consequatur eligendi. Fugit, perferendis quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur doloremque, quibusdam quae explicabo commodi dignissimos magni necessitatibus exercitationem iste fuga assumenda voluptas voluptatibus quos vel nam cupiditate. Cupiditate, quasi!</p> 
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur a quo culpa beatae id eos accusamus earum dolore soluta quos, inventore reiciendis dolorum, repudiandae provident aperiam molestiae nobis temporibus atque?</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else { itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
