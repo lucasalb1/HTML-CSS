@@ -18,11 +18,20 @@ html{
 #tela{
     background: url(imagens/frame-iphone.png);
     background-repeat: no-repeat;
-    height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 311px;
+    height: 627px;
     transform: translate(-50%, -50%);
+}
+iframe#frame{
+    position: relative;
+    top: 81px;
+    left: 24px;
+    width: 264px;
+    height: 469px;
+    background-size: contain;
 }
 
 a{
@@ -39,6 +48,7 @@ a > img{
 a > img:hover{
     border: 1px solid white;
     transform: translate(-3px);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.699);
     transition: .4s;
     transition-timing-function: ease;
 }
