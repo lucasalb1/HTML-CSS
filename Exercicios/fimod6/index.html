@@ -6,32 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Login</title>
     <link rel="stylesheet" href="mobile.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <article>
-        <section id="img">
-
-        </section>
-        <section id="login">
-
-            <h2>Login</h2>
-
-            <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-
-            <form action="login.js" method="post" autocomplete="on">
-
-                <label for="imail"><span class="material-icons">person</span></label>
-                <input type="email" name="mail" id="imail" required autocomplete="email" maxlength="30" placeholder="Insira seu email" size="15">
-
-                <label for="ipass"><span class="material-icons">vpnkey</span></label>
-                <input type="password" name="pass" id="ipass" required autocomplete="current-password" min="8" max="20" placeholder="Insira sua senha" size="15">
-
-                <input id="ent" type="submit" value="Entrar">
-                <input id="esq" type="submit" value="Esqueci minha senha">
-            </form>
-        </section>
-    </article>
+    <main>
+        <article>
+            <section id="img">
+                </section>
+                <section id="login">
+                    <h2>Login</h2>
+                    <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                    <form action="login.php" method="post" autocomplete="on">
+                        <div class="campo">
+                            <i class="material-icons">person</i>
+                            <input type="email" name="mail" id="imail" required autocomplete="email" maxlength="30" placeholder="Seu email">
+                          <!--  <label for="imail">Login</label>-->
+                        </div>
+            
+                        <div class="campo">
+                            <i class="material-icons">vpn_key</i>
+                            <input type="password" name="pass" id="ipass" required autocomplete="current-password" minlength="8" maxlength="20" placeholder="Sua senha">
+                           <!-- <label for="ipass">Senha</label>-->
+                        </div>
+                            <input id="ent" type="submit" value="Entrar">
+                            <input id="esq" type="submit" value="Esqueci minha senha">
+                            
+                        </section>
+                    </form>
+                </section>
+        </article>
+    </main>
 </body>
 </html>
