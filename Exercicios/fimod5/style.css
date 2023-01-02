@@ -33,14 +33,12 @@ iframe#frame{
     height: 469px;
     background-size: contain;
 }
-
 a{
     display: block;
     text-align: right;
     padding-right: 5px;
     padding-top: 5px;
 }
-
 a > img{
     width: 50px;
     border-radius: 40px;
