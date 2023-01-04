@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100vh;
+}
+.container{
+    display: grid;
+    grid-template-columns: 25vw 1fr 1fr 1fr 1fr 1fr 1fr 25vw;
+    grid-template-rows: 15vh 25vh 15vh 15vh 15vh 15vh;
+    grid-template-areas: "h h h h h h h h"
+                         ". he he he he he he ."
+                         ". s s s s s s ."
+                         ". c c c c c c ."
+                         "a a a a a a a ."
+                         "f f f f f f f f";
+                         grid-gap: 5px;
+                         
+}
+
+header{
+    background-color: aquamarine;
+    grid-area: h;
+}
+
+hero{
+    background-color: lightgreen;
+    grid-area: he;
+}
+sub{
+background-color: orange;
+grid-area: s;
+}
+content{
+    background-color: rgba(0, 0, 255, 0.582);
+    grid-area: c;
+}
+
+aside{
+    background-color: yellowgreen;
+    grid-area: a;
+}
+
+footer{
+    background-color: aquamarine;
+    grid-area: f;
+}

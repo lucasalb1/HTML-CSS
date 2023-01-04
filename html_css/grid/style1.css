@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20vh 20vh 20vh 20vh 16.7vh;
+    grid-template-areas: "h h h h h h h"
+                         ". m m m m s ."
+                         ". m m m m s ."
+                         ". a a a a a ."
+                         "f f f f f f f";
+                         
+    grid-gap: 5px;
+    margin: auto;
+    max-width: 1000px;
+}
+
+
+header{
+    background-color: aquamarine;
+    grid-area: h;
+}
+
+main{
+    background-color: coral;
+    grid-area: m;
+}
+
+sidebar{
+    background-color:crimson;
+    grid-area: s;
+}
+
+aside{
+    background-color: yellow;
+    grid-area: a;
+}
+
+footer{
+    background-color: aquamarine;
+    grid-area: f;
+}
